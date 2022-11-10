@@ -1,0 +1,265 @@
+/* DEFAULT */
+
+* {
+  box-sizing: border-box;
+  --light-blue: #2791C2;
+  --text-light-blue: #29B9FC;
+  --grey: #313131F2;
+}
+
+body {
+  background: url(/AirontMoviesApp/log-in/images/back-desktop.png);
+  margin: auto;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* DEFAULT */
+
+/* HEADER LOGO */
+
+.logo {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 32px;
+    /* identical to box height, or 89% */
+  margin: 72px 0 56px;
+  text-align: center;
+  color: var(--light-blue);
+}
+
+.alt-logo {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* HEADER LOGO */
+
+/* FORM */
+
+form {
+  margin: auto;
+  margin-bottom: 80px;
+  width: 445px;
+  height: 570px;
+  background-color: var(--grey);
+  box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  padding: 0 45px;
+}
+
+/* FORM */
+
+.welcome {
+  padding-top: 32px;
+  padding-left: 23px;
+  padding-right: 23px;
+  
+  margin-bottom: 20px;
+}
+
+.welcome h2, .welcome h3 {
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+  
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    /* Primary/White */
+  
+    color: #FFFFFF;
+}
+
+.welcome h3 {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+li {
+  width: 100%;
+}
+
+input#password, input#mail {
+  height: 45.19px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 18.27px;
+}
+
+input#password {
+  margin-top: 10.63px;
+}
+
+.pw {
+  position: relative;
+}
+
+.flex-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+input#remember {
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border: 1px solid #656F7E;
+  border-radius: 3px;
+  margin-left: 14px;
+}
+
+.checkbox-text {
+  font-family: 'Open Sans';
+  font-size: 10px;
+  color: white;
+  margin-right: auto;
+  margin-left: 5px;
+  align-self: center;
+  line-height: 32px;
+}
+
+.forgot {
+  font-size: 10px;
+  color: var(--text-light-blue);
+  text-decoration: none;
+  margin-right: 14px;
+  line-height: 32px;
+}
+
+.btn_login {
+  background: var(--light-blue);
+  color: white;
+  border: none;
+  width: 100%;
+  height: 47px;
+  border-radius: 31px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.btn_login:hover {
+  background-color: #29B9FC;
+}
+
+.register {
+  color: white;
+  font-size: 10px;
+  line-height: 32px;
+}
+
+.register a{
+  color: var(--text-light-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color:#63cbfc;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  border-radius: 35px;
+  background-color: var(--grey);
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Open Sans', serif;
+}
+
+.btn.first {
+  margin-top: 0;
+}
+
+.or {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.or span {
+  padding: 0 35px;
+}
+
+.or hr {
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  height: 0;
+}
+
+i {
+  margin-right: 17px;
+  margin-left: -20px;
+  border: 2px solid white;
+  padding: 4px 7px;
+  border-radius: 6px;
+  transition: all 0.2s ease-out;
+  font-size: 20px;
+}
+
+.fa-twitter, .fa-google {
+  margin-left: -36px;
+  padding: 3.5px;
+}
+
+.fa-google {
+border: none;
+font-size: 29px;
+margin-right: 17px;
+margin-left: -42px;
+}
+
+
+
+.fa-eye {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.1rem;
+  color: var(--light-blue);
+  width: 30px;
+}
+
+i:hover {
+  background-color: white;
+  color: var(--grey);
+}
+
+button {
+  cursor: pointer;
+}
+
+.google {
+  margin-top: -20px;
+}
+
