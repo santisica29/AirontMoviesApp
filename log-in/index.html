@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&family=Open+Sans:wght@400;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&family=Open+Sans:wght@400;700&display=swap"
   rel="stylesheet">
 
   <title>Log in</title>
@@ -22,57 +22,58 @@
   </header>
   <main>
     <form action="" method="POST">
-      <label for="mail">
-        <div class="welcome">
-          <h2>Welcome! Log in or Register</h2>
-          <h3>Log in to find the movies you're looking for!</h3>
-        </div>
-      </label>
-      
-      <ul>
-        <li class="input">
-          <input type="email" id="mail" name="user_email" placeholder="Email">
-        </li>
-        <li class="input pw">
-          <input type="password" id="password" name="user_password" placeholder="Password">
-          <i class="fa-regular fa-eye"></i>
-        </li>
-     
+      <div class="flex">
+        <label for="mail">
+          <div class="welcome">
+            <h2>Welcome! Log in or Register</h2>
+            <h3>Log in to find the movies you're looking for!</h3>
+          </div>
+        </label>
+        
+        <ul>
+          <li class="input">
+            <input type="email" id="mail" name="user_email" placeholder="Email">
+          </li>
+          <li class="input pw">
+            <input type="password" id="password" name="user_password" placeholder="Password">
+            <i class="fa-regular fa-eye"></i>
+          </li>
+        
           <li class="flex-item-container">
             <input type="checkbox" id="remember">
             <label for="remember" class="checkbox-text">Remember me</label>
             <a href="#" class="forgot">Forgot Password?</a>
           </li>
         
-        <li>
-          <button type="button" class="btn_login">
-            Log in
-          </button>
-        </li>
-        <li class="register">
-          <p>Not registered yet? <a href="#">Register Now</a></p>
-        </li>
-        <div class="or">
-          <hr>
-          <span>or</span>
-          <hr>
-        </div>
-        
-        <li>
-          <button class="btn first">
-            <i class="fa-brands fa-facebook-f"></i>
-            Login with Facebook
-          </button>
-          <button class="btn">
-            <i class="fa-brands fa-twitter"></i>
-            Login with Twitter</button>
-          <button class="btn">
-            <i class="fa-brands fa-google"></i>
-            <span>Login with Google</span>
+          <li>
+            <button type="button" class="btn_login">
+              Log in
             </button>
-        </li>
-      </ul>
-      
+          </li>
+          <li class="register">
+            <p>Not registered yet? <a href="#">Register Now</a></p>
+          </li>
+          <div class="or">
+            <hr>
+            <span>or</span>
+            <hr>
+          </div>
+        
+          <li>
+            <button class="btn first">
+              <i class="fa-brands fa-facebook-f"></i>
+              Login with Facebook
+            </button>
+            <button class="btn">
+              <i class="fa-brands fa-twitter"></i>
+              Login with Twitter</button>
+            <button class="btn">
+              <i class="fa-brands fa-google"></i>
+              Login with Google
+            </button>
+          </li>
+        </ul>
+      </div>
     </form>
   </main>
 </body>

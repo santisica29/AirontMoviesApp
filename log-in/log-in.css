@@ -8,8 +8,8 @@
 }
 
 body {
-  background: url(/AirontMoviesApp/log-in/images/back-desktop.png);
-  margin: auto;
+  background: url(./images/back-desktop.png);
+  margin: 0 auto 2rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
@@ -24,18 +24,20 @@ li {
   padding: 0;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* DEFAULT */
 
 /* HEADER LOGO */
 
 .logo {
-  font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 32px;
+  font: 900 2.25rem/2rem 'Montserrat', sans-serif;
     /* identical to box height, or 89% */
-  margin: 72px 0 56px;
+  margin: 4.5rem 0 3.5rem;
   text-align: center;
   color: var(--light-blue);
 }
@@ -51,45 +53,33 @@ li {
 
 form {
   margin: auto;
-  margin-bottom: 80px;
-  width: 445px;
-  height: 570px;
+  margin-bottom: 5rem;
+  width: 27.8125rem;
+  height: 35.625rem;
   background-color: var(--grey);
-  box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8);
+  box-shadow: 0px .375rem .375rem rgba(11, 11, 11, 0.8);
   border-radius: 10px;
   text-align: center;
-  padding: 0 45px;
+  padding: 0 2.8125rem;
 }
 
 /* FORM */
 
 .welcome {
-  padding-top: 32px;
-  padding-left: 23px;
-  padding-right: 23px;
-  
-  margin-bottom: 20px;
+  padding: 2rem 1.4375rem 0 1.4375rem;
 }
 
 .welcome h2, .welcome h3 {
-  font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    /* or 131% */
-  
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-    /* Primary/White */
-  
-    color: #FFFFFF;
+  font: 700 1rem/1.3125rem 'Open Sans';
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #FFFFFF;
 }
 
 .welcome h3 {
   font-weight: 400;
-  font-size: 10px;
+  font-size: .625rem;
 }
 
 li {
@@ -97,14 +87,19 @@ li {
 }
 
 input#password, input#mail {
-  height: 45.19px;
+  height: 2.8244rem;
   width: 100%;
   border-radius: 5px;
-  padding-left: 18.27px;
+  padding-left: 1.1419rem;
+  font: 400 .8125rem 'Open Sans', sans-serif;
+}
+
+input#mail::placeholder, input#password::placeholder {
+  color: #BCBCBC;
 }
 
 input#password {
-  margin-top: 10.63px;
+  margin-top: .6644rem;
 }
 
 .pw {
@@ -115,34 +110,34 @@ input#password {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  margin: .3125rem;
 }
 
 input#remember {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   background: #FFFFFF;
   border: 1px solid #656F7E;
-  border-radius: 3px;
-  margin-left: 14px;
+  border-radius: .1875rem;
+  margin-left: .875rem;
 }
 
 .checkbox-text {
   font-family: 'Open Sans';
-  font-size: 10px;
+  font-size: .625rem;
   color: white;
   margin-right: auto;
-  margin-left: 5px;
+  margin-left: .3125rem;
   align-self: center;
-  line-height: 32px;
+  line-height: 2rem;
 }
 
 .forgot {
-  font-size: 10px;
+  font-size: .625rem;
   color: var(--text-light-blue);
   text-decoration: none;
-  margin-right: 14px;
-  line-height: 32px;
+  margin-right: .875rem;
+  line-height: 2rem;
 }
 
 .btn_login {
@@ -150,13 +145,9 @@ input#remember {
   color: white;
   border: none;
   width: 100%;
-  height: 47px;
-  border-radius: 31px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
+  height: 2.9375rem;
+  border-radius: 1.9375rem;
+  font: 700 .9375rem/1.25rem 'Open Sans', sans-serif;
   cursor: pointer;
 }
 
@@ -166,8 +157,8 @@ input#remember {
 
 .register {
   color: white;
-  font-size: 10px;
-  line-height: 32px;
+  font-size: .625rem;
+  line-height: 2rem;
 }
 
 .register a{
@@ -184,15 +175,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 46px;
-  border-radius: 35px;
+  height: 2.875rem;
+  font: 700 0.875rem 'Open Sans', serif;
+  border-radius: 2.1875rem;
   background-color: var(--grey);
   border: 1px solid white;
   color: white;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: 'Open Sans', serif;
+  margin-top: 0.625rem;
 }
 
 .btn.first {
@@ -203,7 +192,7 @@ a:hover {
   color: white;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   align-items: center;
 }
 
@@ -213,44 +202,42 @@ a:hover {
 
 .or hr {
   width: 100%;
-  border: 1px solid white;
+  border: .0625rem solid white;
   background-color: white;
   height: 0;
 }
 
 i {
-  margin-right: 17px;
-  margin-left: -20px;
-  border: 2px solid white;
-  padding: 4px 7px;
+  margin-right: 1.0625rem;
+  margin-left: -1.25rem;
+  border: .125rem solid white;
+  padding: .25rem .4375rem;
   border-radius: 6px;
   transition: all 0.2s ease-out;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .fa-twitter, .fa-google {
-  margin-left: -36px;
-  padding: 3.5px;
+  margin-left: -2.25rem;
+  padding: .2188rem;
 }
 
 .fa-twitter {
-  padding: 6px 5px;
+  padding: .375rem .3125rem; 
 }
 .fa-google {
-border: none;
-font-size: 29px;
-margin-right: 14px;
-margin-left: -40px;
+  border: none;
+  font-size: 1.8125rem;
+  margin-right: 0.875rem;
+  margin-left: -2.5rem;
 }
-
-
 
 .fa-eye {
   position: absolute;
   right: 0.5rem;
   top: 1.1rem;
   color: var(--light-blue);
-  width: 30px;
+  width: 1.875rem;
 }
 
 i:hover {
@@ -263,6 +250,98 @@ button {
 }
 
 .google {
-  margin-top: -20px;
+  margin-top: -1.25rem;
 }
 
+
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 640px) {
+  
+  .logo {
+    margin: 5% auto;
+    font-size: 1.3rem;
+  }
+
+  form {
+    height: 80%;
+    width: 90%;
+    border-radius: 6px;
+    margin-bottom: 20vh;
+    padding: 7%;
+  }
+
+  .welcome {
+  padding: 2% 0 0;
+}
+
+  .welcome h3, .welcome h2{
+    font-size: 0.85rem;
+  }
+
+  .welcome h3 {
+    font-weight: 100;
+    font-size: 0.79rem;
+    color: rgb(224, 221, 221);
+  }
+
+  input#remember {
+    margin-left: 0;
+  }
+
+  .flex-item-container {
+    margin-bottom: 1rem;
+  }
+
+  .checkbox-text, .forgot {
+    font-size: 0.72rem;
+  }
+
+  .checkbox-text {
+    color: #BCBCBC;
+  }
+
+  .or hr {
+    border: 1px solid grey;
+    border-top: 0;
+  }
+
+  i {
+    font-size: 1.1rem;
+    border-width: 1px;
+  }
+
+  .fa-facebook-f {
+    margin-left: 20px;
+  }
+
+  .fa-twitter {
+    margin-left: 6px;
+  }
+
+  .fa-google {
+    margin-left: 0;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+  }
+
+  .btn_login {
+    height: 2.6rem;
+  }
+
+  .register {
+    font-size: 0.75rem;
+  }
+
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media (max-width: 834px) {
+  body {
+    background: url('./images/back-tab.png');
+  }
+}
