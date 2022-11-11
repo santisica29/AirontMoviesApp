@@ -436,20 +436,20 @@ i:hover {
 @media (max-width:610px) {
   form {
     width: 90%;
+    margin: 0 5%;
   }
 
-  .alt-logo {
-    text-align: center;
-    margin: auto;
+  .welcome {
+    margin-bottom: 0;
   }
 
   .welcome h2 {
     font-size: 1.3rem;
-    /* line-height: 1.6; */
+    line-height: 1.6;
   }
 
   .welcome h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6rem;
   }
 
@@ -457,7 +457,27 @@ i:hover {
     font-size: 1.04rem;
   }
 
+  .btn_login {
+    height: 3.7rem;
+    font-size: 1.2rem;
+  }
+
+  .register p{
+    margin-bottom: 1rem;
+  }
+
   .btn {
     font-size: 1rem;
+    padding-left: 1.7rem;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .btn.first {
+    margin-top: 1.6rem;
+  }
+
+  i {
+    margin-right: 0;
   }
 }
