@@ -9,25 +9,24 @@
 
 body {
   background: url(./images/back-desktop.png);
-  margin: 0 auto 2rem;
-  width: 100%;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
 
 ul {
   list-style: none;
   padding: 0;
-}
-
-li {
   margin: 0;
-  padding: 0;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* DEFAULT */
@@ -37,7 +36,7 @@ li {
 .logo {
   font: 900 2.25rem/2rem 'Montserrat', sans-serif;
     /* identical to box height, or 89% */
-  margin: 4.5rem 0 3.5rem;
+  margin: 4.5rem 0 3.25rem;
   text-align: center;
   color: var(--light-blue);
 }
@@ -60,18 +59,13 @@ form {
   box-shadow: 0px .375rem .375rem rgba(11, 11, 11, 0.8);
   border-radius: 10px;
   text-align: center;
-  padding: 0 2.8125rem;
+  padding: 2rem 2.8125rem 5rem;
 }
 
-/* FORM */
-
-.welcome {
-  padding: 2rem 1.4375rem 0 1.4375rem;
-}
+/* WELCOME */
 
 .welcome h2, .welcome h3 {
   font: 700 1rem/1.3125rem 'Open Sans';
-  text-align: center;
   margin-bottom: 0;
   margin-top: 0;
   color: #FFFFFF;
@@ -82,23 +76,27 @@ form {
   font-size: .625rem;
 }
 
-li {
-  width: 100%;
-}
+/* INPUT FIELDS */
 
-input#password, input#mail {
+.input_password, .input_email {
   height: 2.8244rem;
-  width: 100%;
+  width: 22.1944rem;
   border-radius: 5px;
   padding-left: 1.1419rem;
-  font: 400 .8125rem 'Open Sans', sans-serif;
+  font: 500 .8125rem 'Open Sans', sans-serif;
+  color: rgb(24, 24, 24);
 }
 
-input#mail::placeholder, input#password::placeholder {
+.input_email {
+  margin-top: 20px;
+}
+
+.input_email::placeholder, .input_password::placeholder {
+  font-weight: 400;
   color: #BCBCBC;
 }
 
-input#password {
+.input_password {
   margin-top: .6644rem;
 }
 
@@ -106,45 +104,56 @@ input#password {
   position: relative;
 }
 
+.fa-eye {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.1rem;
+  color: var(--light-blue);
+  font-size: 1.12rem;
+  width: 1.875rem;
+}
+
+/* CHECKBOX AND ANCHOR LINK */
+
 .flex-item-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: .3125rem;
 }
 
-input#remember {
+.input_remember {
   width: 1.125rem;
   height: 1.125rem;
   background: #FFFFFF;
   border: 1px solid #656F7E;
   border-radius: .1875rem;
-  margin-left: .875rem;
+  margin: 0.8rem 0 .75rem 0.8rem;
 }
 
-.checkbox-text {
+.label_remember {
   font-family: 'Open Sans';
   font-size: .625rem;
-  color: white;
+  color: #BCBCBC;
   margin-right: auto;
-  margin-left: .3125rem;
-  align-self: center;
+  margin-left: .44rem;
   line-height: 2rem;
 }
 
-.forgot {
+.forgot-pw {
   font-size: .625rem;
   color: var(--text-light-blue);
   text-decoration: none;
-  margin-right: .875rem;
+  margin-right: 1.25rem;
   line-height: 2rem;
 }
+
+/* LOGIN BUTTON */
 
 .btn_login {
   background: var(--light-blue);
   color: white;
   border: none;
-  width: 100%;
+  width: 22.25rem;
   height: 2.9375rem;
   border-radius: 1.9375rem;
   font: 700 .9375rem/1.25rem 'Open Sans', sans-serif;
@@ -155,10 +164,16 @@ input#remember {
   background-color: #29B9FC;
 }
 
+/* REGISTER NOW */
+
 .register {
   color: white;
   font-size: .625rem;
   line-height: 2rem;
+}
+
+.register p {
+  margin-bottom: .31rem;
 }
 
 .register a{
@@ -170,12 +185,35 @@ a:hover {
   color:#63cbfc;
 }
 
+/* OR DIVIDER */
+
+.or {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.or span {
+  padding: 0 1.8125rem;
+  font-size: .8125rem;
+  color: white;
+  height: 1.3rem;
+}
+
+.or hr {
+  width: 8.875rem;
+  border: .0625rem solid white;
+  border-top: 0;
+}
+
+/* LOGIN WITH */
+
 .btn {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  width: 100%;
-  height: 2.875rem;
+  width: 22.375rem;
+  height: 2.813rem;
   font: 700 0.875rem 'Open Sans', serif;
   border-radius: 2.1875rem;
   background-color: var(--grey);
@@ -185,75 +223,33 @@ a:hover {
 }
 
 .btn.first {
-  margin-top: 0;
-}
-
-.or {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  align-items: center;
-}
-
-.or span {
-  padding: 0 35px;
-}
-
-.or hr {
-  width: 100%;
-  border: .0625rem solid white;
-  background-color: white;
-  height: 0;
+  margin-top: 1.6rem;
 }
 
 i {
   margin-right: 1.0625rem;
-  margin-left: -1.25rem;
+  margin-left: 4.3rem;
   border: .125rem solid white;
   padding: .25rem .4375rem;
   border-radius: 6px;
   transition: all 0.2s ease-out;
-  font-size: 1.25rem;
-}
-
-.fa-twitter, .fa-google {
-  margin-left: -2.25rem;
-  padding: .2188rem;
+  font-size: 1.2rem;
 }
 
 .fa-twitter {
   padding: .375rem .3125rem; 
 }
+
 .fa-google {
   border: none;
   font-size: 1.8125rem;
-  margin-right: 0.875rem;
-  margin-left: -2.5rem;
-}
-
-.fa-eye {
-  position: absolute;
-  right: 0.5rem;
-  top: 1.1rem;
-  color: var(--light-blue);
-  width: 1.875rem;
-}
+  padding: .2188rem;
+} 
 
 i:hover {
   background-color: white;
   color: var(--grey);
 }
-
-button {
-  cursor: pointer;
-}
-
-.google {
-  margin-top: -1.25rem;
-}
-
-
 
 /* MEDIA QUERIES MOBILE */
 

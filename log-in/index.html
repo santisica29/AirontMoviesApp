@@ -5,15 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- fonts-->
+  <!-- FONTS START -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&family=Open+Sans:wght@400;700&display=swap"
-  rel="stylesheet">
-
-  <title>Log in</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&family=Open+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- TITLE -->
+  <title>Movie Finder</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="log-in.css">
+  <!-- ICONS -->
   <script src="https://kit.fontawesome.com/676016ccbb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,26 +25,29 @@
   <main>
     <form action="" method="POST">
       <div class="flex">
-        <label for="mail">
           <div class="welcome">
             <h2>Welcome! Log in or Register</h2>
             <h3>Log in to find the movies you're looking for!</h3>
           </div>
-        </label>
         
         <ul>
-          <li class="input">
-            <input type="email" id="mail" name="user_email" placeholder="Email">
+          <li>
+            <input type="email" id="mail" name="user_email"class="input_email" placeholder="Email">
           </li>
-          <li class="input pw">
-            <input type="password" id="password" name="user_password" placeholder="Password">
+          <li class="pw">
+            <input type="password" id="password" name="user_password" 
+            class="input_password"
+            placeholder="Password">
             <i class="fa-regular fa-eye"></i>
           </li>
         
           <li class="flex-item-container">
-            <input type="checkbox" id="remember">
-            <label for="remember" class="checkbox-text">Remember me</label>
-            <a href="#" class="forgot">Forgot Password?</a>
+            <input type="checkbox" id="remember"
+            name="remember"
+            class="input_remember"
+            >
+            <label for="remember" class="label_remember">Remember me</label>
+            <a href="#" class="forgot-pw">Forgot Password?</a>
           </li>
         
           <li>
