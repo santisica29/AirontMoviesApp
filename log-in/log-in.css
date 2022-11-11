@@ -252,13 +252,15 @@ i:hover {
   color: var(--grey);
 }
 
-/* MOBILE */
+/* DEFAULT QUERIES */
 
 @media (max-width: 52.125rem) {
   body {
     background: url('./images/back-tab.png');
   }
 }
+
+/* MOBILE QUERIES */
 
 @media (max-width: 640px) {
   
@@ -350,6 +352,7 @@ i:hover {
     margin-bottom: 2.5rem;
     border-radius: 2.1875rem;
     transition: all 0.3s ease-out;
+    font-size: 1.5rem;
   }
 
   /* REGISTER */
@@ -407,7 +410,7 @@ i:hover {
     font-size: 2.6rem;
     margin-top: .8125rem;
     margin-bottom: .8125rem;
-    padding: 0 0.25rem;
+    padding: .125rem 0.25rem;
   }
 
 }
@@ -425,5 +428,31 @@ i:hover {
 
   .logo {
     margin-bottom: 3.5rem;
+  }
+}
+
+/* SMALL MOBILE PHONES */
+
+@media (max-width:610px) {
+  form {
+    width: 90%;
+  }
+
+  .welcome h2 {
+    font-size: 1.3rem;
+    /* line-height: 1.6; */
+  }
+
+  .welcome h3 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .label_remember, .forgot-pw {
+    font-size: 1.04rem;
+  }
+
+  .btn {
+    font-size: 1rem;
   }
 }
