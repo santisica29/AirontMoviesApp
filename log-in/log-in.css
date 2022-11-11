@@ -438,6 +438,11 @@ i:hover {
     width: 90%;
   }
 
+  .alt-logo {
+    text-align: center;
+    margin: auto;
+  }
+
   .welcome h2 {
     font-size: 1.3rem;
     /* line-height: 1.6; */
