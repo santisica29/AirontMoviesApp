@@ -106,11 +106,12 @@ form {
 
 .fa-eye {
   position: absolute;
-  right: 0.5rem;
-  top: 1.1rem;
+  right: 0;
+  top: 1.25rem;
   color: var(--light-blue);
   font-size: 1.12rem;
   width: 1.875rem;
+  border: none;
 }
 
 /* CHECKBOX AND ANCHOR LINK */
@@ -121,7 +122,7 @@ form {
   align-items: center;
 }
 
-.input_remember {
+.checkbox_remember {
   width: 1.125rem;
   height: 1.125rem;
   background: #FFFFFF;
@@ -212,6 +213,7 @@ a:hover {
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-left: 4.3125rem;
   width: 22.375rem;
   height: 2.813rem;
   font: 700 0.875rem 'Open Sans', serif;
@@ -228,7 +230,6 @@ a:hover {
 
 i {
   margin-right: 1.0625rem;
-  margin-left: 4.3rem;
   border: .125rem solid white;
   padding: .25rem .4375rem;
   border-radius: 6px;
@@ -251,93 +252,178 @@ i:hover {
   color: var(--grey);
 }
 
-/* MEDIA QUERIES MOBILE */
+/* MOBILE */
+
+@media (max-width: 52.125rem) {
+  body {
+    background: url('./images/back-tab.png');
+  }
+}
 
 @media (max-width: 640px) {
   
+  body {
+    height: 79rem;
+  }
+
   .logo {
-    margin: 5% auto;
-    font-size: 1.3rem;
+    margin: 4.125rem auto 3.9375rem;
+    font-size: 2.625rem;
   }
 
   form {
-    height: 80%;
-    width: 90%;
+    height: 64.3125rem;
+    width: 36.25rem;
     border-radius: 6px;
-    margin-bottom: 5%;
-    padding: 7%;
+    margin: 3.9375rem 1.875rem 4.375rem;
+    padding: 3.125rem 2.9375rem 3.8125rem;
   }
 
   .welcome {
-  padding: 2% 0 0;
+  height: 5.5rem;
+  margin-bottom: 2.5rem;
 }
 
   .welcome h3, .welcome h2{
-    font-size: 0.85rem;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
   }
 
-  .welcome h3 {
-    font-weight: 100;
-    font-size: 0.79rem;
-    color: rgb(224, 221, 221);
+  /* DEFAULT */
+
+  .input_email {
+    margin-top: 0;
   }
 
-  input#remember {
+  .input_email, .input_password, .btn_login, .register, .or, .btn {
+    width: 100%;
+   } 
+
+  .input_email, .input_password {
+    height: 4.375rem;
+    padding-left: 1.8125rem;
+  }
+
+  .input_password {
+    margin-bottom: 1.1875rem;
+  }
+
+  .input_email::placeholder,
+  .input_password::placeholder {
+      font-size: 1.5rem;
+    }
+
+  .fa-eye {
+    font-size: 1.65rem;
+    top: 1.75rem;
+    right: .4rem;
+  }  
+
+  /* REMEMBER FORGOT */
+
+  .flex-item-container {
+    height: 2rem;
+    margin-top: 0;
+    margin-bottom: 2.1875rem;
+  }
+
+  .checkbox_remember {
+    height: 1.875rem;
+    width: 30px;
     margin-left: 0;
   }
 
-  .flex-item-container {
-    margin-bottom: 1rem;
+  .label_remember {
+    font-size: 1.25rem;
+    margin-left: .5rem;
   }
 
-  .checkbox-text, .forgot {
-    font-size: 0.72rem;
+  .forgot-pw {
+    margin-right: 0;
+    font-size: 1.25rem;
   }
 
-  .checkbox-text {
-    color: #BCBCBC;
+  /* Log in Button Primary */
+
+  .btn_login {
+    height: 4.375rem;
+    margin-bottom: 2.5rem;
+    border-radius: 2.1875rem;
+    transition: all 0.3s ease-out;
   }
+
+  /* REGISTER */
+
+  .register p{
+    margin: 0 0 1.9375rem;
+    font-size: 1.25rem;
+  }
+
+  /* OR */
 
   .or hr {
-    border: 1px solid grey;
-    border-top: 0;
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 12rem;
+  }
+
+  .or span {
+    font-size: 1.25rem;
+    height: 2rem;
+    padding: 0 2.375rem;
+  }
+
+  /* Log in BTN */
+
+  .btn {
+    height: 4.375rem;
+    font-size: 1.5rem;
+    padding-left: 4.6875rem;
+    justify-content: start;
+    margin-top: 2.5rem;
+    border-radius: 2.1875rem;
+  }
+
+  .btn.first {
+    margin-top: 3.125rem;
   }
 
   i {
-    font-size: 1.1rem;
+    font-size: 1.8125rem;
     border-width: 1px;
+    border-radius: 10px;
+    height: 2.75rem;
+    margin-right: 1.5625rem;
   }
 
   .fa-facebook-f {
-    margin-left: 20px;
+    padding: .4375rem .875rem;
   }
 
   .fa-twitter {
-    margin-left: 6px;
+    padding: .45rem .5244rem;
   }
-
+  
   .fa-google {
-    margin-left: 0;
-  }
-
-  .btn {
-    margin-top: 1.5rem;
-  }
-
-  .btn_login {
-    height: 2.6rem;
-  }
-
-  .register {
-    font-size: 0.75rem;
+    font-size: 2.6rem;
+    margin-top: .8125rem;
+    margin-bottom: .8125rem;
+    padding: 0 0.25rem;
   }
 
 }
 
-/* MEDIA QUERIES TABLET */
+/* TABLET */
 
-@media (max-width: 834px) {
+@media (min-width: 40.0625rem) and (max-width: 52.125rem) {
   body {
-    background: url('./images/back-tab.png');
+    height: 74.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 3.5rem;
   }
 }
